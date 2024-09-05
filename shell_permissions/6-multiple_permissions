@@ -1,2 +1,11 @@
 #!/bin/bash
--rwxr-xr-- hello
+
+# Check if the file "hello" exists in the current working directory
+if [ -f "hello" ]; then
+  # Add execute permission for the owner and group, and read permission for others
+  chmod u+x,g+x,o+r hello
+  echo "Permissions updated: owner and group can execute, others can read."
+else
+  echo "File 'hello' not found in the current directory."
+fi
+
