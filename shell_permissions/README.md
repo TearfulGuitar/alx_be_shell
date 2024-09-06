@@ -1,1 +1,0 @@
-Write a script that switches the user to user betty
